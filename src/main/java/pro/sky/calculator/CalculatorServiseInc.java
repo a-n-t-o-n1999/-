@@ -4,16 +4,16 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class CalculatorServiseInc implements CalculatorServise {
-    public String HelloCalculator() {
+    public String greet() {
         return "Добро пожаловать в калькулятор";
     }
 
-    public String Sum(int num1, int num2) {
+    public String sum(int num1, int num2) {
         int answer = num1 + num2;
         return num1 + " + " + num2 + " = " + answer;
     }
 
-    public String subtraction(int num1, int num2) {
+    public String substract(int num1, int num2) {
         int answer = num1 - num2;
         return num1 + " - " + num2 + " = " + answer;
     }

@@ -11,20 +11,20 @@ public class Controller {
         this.calculatorServise=calculatorServise;
     }
     @GetMapping
-    public String Hello(){
+    public String hello(){
         return "Привет";
     }
     @GetMapping(path = "/calculator")
-    public String HelloCalculator(){
-        return calculatorServise.HelloCalculator();
+    public String greet (){
+        return calculatorServise.greet ();
     }
     @GetMapping(path = "/calculator/plus")
-    public String Sum(@RequestParam("num1") int num1 , @RequestParam("num2")int num2){
-        return calculatorServise.Sum(num1, num2);
+    public String sum(@RequestParam("num1") int num1 , @RequestParam("num2")int num2){
+        return calculatorServise.sum(num1, num2);
     }
     @GetMapping(path = "/calculator/minus")
-    public String subtraction(@RequestParam("num1") int num1 , @RequestParam("num2")int num2){
-        return calculatorServise.subtraction(num1, num2);
+    public String substract(@RequestParam("num1") int num1 , @RequestParam("num2")int num2){
+        return calculatorServise.substract(num1, num2);
     }
     @GetMapping(path = "/calculator/multiply")
     public String multiply(@RequestParam("num1") int num1 , @RequestParam("num2")int num2){
